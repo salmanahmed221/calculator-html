@@ -20,6 +20,25 @@
       #input2 {
         width: 345px;
       }
+      @media only screen and (max-width: 768px) {
+        #operator,
+        #input1,
+        #input2 {
+          width: 350px; /* Adjust as needed for mobile layout */
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        #heading {
+          font-size: 35px;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        #calculator {
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+        }
+      }
     </style>
   </head>
   <body>
@@ -28,7 +47,9 @@
         <div class="col-md-12">
           <div class="card">
             <div class="card-body">
-              <h2 class="card-title text-center">Simple Calculator</h2>
+              <h2 id="heading" class="card-title text-center">
+                Simple Calculator
+              </h2>
               <form id="calculator" class="form-inline">
                 <div class="form-group mr-2">
                   <input
